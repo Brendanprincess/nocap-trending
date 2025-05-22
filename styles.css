@@ -165,3 +165,72 @@
                 flex-direction: column;
             }
         }
+/* Add these to your existing styles.css */
+
+/* 1. Base Mobile Optimization */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero {
+        padding: 1rem;
+        min-height: 90vh;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 1.2rem;
+    }
+
+    .step {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+/* 2. Small Phone Adjustments */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta-buttons {
+        gap: 0.8rem;
+    }
+
+    .features {
+        padding: 2rem 1rem;
+    }
+
+    .grid {
+        gap: 1rem;
+    }
+}
+
+/* 3. Touch-Friendly Enhancements */
+button, .btn {
+    min-width: 120px;
+    min-height: 40px;
+}
+
+/* 4. Mobile-Specific Layout Fixes */
+.hero .content {
+    text-align: center;
+}
+
+.how-it-works {
+    padding: 2rem 1rem;
+}
+
+/* 5. Prevent Image Overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
