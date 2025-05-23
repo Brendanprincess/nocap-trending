@@ -158,8 +158,16 @@
             }
             
             .rocket-container {
-                display: none;
+                right: 5%;
+                bottom: 15%;
+                animation: float 3s ease-in-out infinite;
             }
+         .rocket {
+                font-size: 6rem;
+                transform: rotate(-45deg)
+                 scale(0.7);
+                 opacity: 0.85;
+         }
             
             .cta-buttons {
                 flex-direction: column;
